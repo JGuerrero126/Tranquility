@@ -9,19 +9,20 @@ import {
 } from "@chakra-ui/react";
 import ServiceCard from "../serviceCard";
 import StaffCard from "../staffCard";
+import Footer from "../footer";
 
 function Home() {
   return (
     <div>
       <Container
         bg="wheat"
-        position="absolute"
+        position="sticky"
         marginTop="-1rem"
         minH="100%"
         paddingBottom="3rem"
         minW="100vw"
       >
-        <Heading>Tranquil Services</Heading>
+        <Heading textAlign="center">Tranquil Services</Heading>
         <ServiceCard
           title="Manicure"
           img="https://images.pexels.com/photos/10123923/pexels-photo-10123923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
@@ -33,17 +34,20 @@ function Home() {
           text="Enjoy a calming pedicure"
         />
         <ServiceCard
-          title="Beautiful Hair Styling"
+          title="Hair Styling"
           img="https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=400"
           text="Reinvigore your feeling of beauty with a One-Of-A-Kind hair style"
         />
-        <Heading mt="1rem">Meet The Staff</Heading>
+        <Heading mt="1rem" textAlign="center">
+          Meet The Staff
+        </Heading>
         <StaffCard
           name="Rosanne"
           portrait="https://images.pexels.com/photos/14057676/pexels-photo-14057676.jpeg?auto=compress&cs=tinysrgb&w=400"
           description="Founder and Lead Hair Stylist"
         />
       </Container>
+      {/* <Footer /> */}
     </div>
   );
 }

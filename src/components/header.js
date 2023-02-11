@@ -4,7 +4,14 @@ function Header() {
   return (
     <Heading>
       <Center>
-        <Text zIndex="1" position="absolute" top="0">
+        <Text
+          className="tranHead"
+          fontFamily="fantasy"
+          zIndex="1"
+          position="absolute"
+          top="10"
+          fontSize="2.25rem"
+        >
           Tranquility Spa & Salon
         </Text>
       </Center>
@@ -12,7 +19,7 @@ function Header() {
         <Image
           zIndex="1"
           top="0"
-          src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          src="https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         />
       </Box>
     </Heading>
