@@ -19,7 +19,7 @@ function StaffCard({ name, portrait, description }) {
     >
       <Center mt={["1rem", "0rem"]}>
         <Box w="15rem" h="15rem">
-          <Image border="0.5rem solid wheat" src={portrait} />
+          <Image border="0.5rem solid darkred" src={portrait} />
         </Box>
       </Center>
       <CardBody>

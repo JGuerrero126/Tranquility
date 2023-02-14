@@ -9,13 +9,13 @@ function Header() {
           fontFamily="fantasy"
           zIndex="1"
           position="absolute"
-          top="10"
-          fontSize="2.25rem"
+          top="12"
+          fontSize={["2.25rem", "5rem"]}
         >
           Tranquility Spa & Salon
         </Text>
       </Center>
-      <Box filter="auto" blur="2px" w="100vw">
+      <Box filter="auto" blur="2px" w="100vw" maxH={["20vh", "15vh"]}>
         <Image
           zIndex="1"
           top="0"
