@@ -7,11 +7,11 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link } from "@chakra-ui/react";
 
 function ServiceCard({ title, img, text, link }) {
   return (
-    <Link to={link}>
+    <Link href={link}>
       <Card
         direction={["column", "column", "row"]}
         boxShadow="0.5rem 0.5rem 0rem brown"
