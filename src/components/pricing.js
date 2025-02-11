@@ -7,7 +7,7 @@ import {
   Image,
   List,
   ListItem,
-  Separator,
+  // Separator,
   Text,
 } from "@chakra-ui/react";
 
@@ -28,7 +28,7 @@ function Pricing({ title, img, list }) {
           {list.map((item, index) => (
             <div>
               <ListItem key={index}>{item}</ListItem>
-              <Separator />
+              {/* <Separator /> */}
             </div>
           ))}
           ;
