@@ -12,7 +12,6 @@ function App() {
         <Routes>
           <Route exact path="/" Component={Home} />
           <Route path="/manipedi-pricing" Component={manipedi} />
-          {/* <Home /> */}
         </Routes>
         <Footer />
       </BrowserRouter>
