@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-function Pricing({ title, img, list }) {
+function Pricing({ title, img, description, list }) {
   return (
     <Card
       direction={["column", "column", "row"]}
@@ -24,6 +24,7 @@ function Pricing({ title, img, list }) {
         <Heading textColor="coral" textAlign="center">
           {title}
         </Heading>
+        {description && <Text textAlign="center">{description}</Text>}
         <List align="center">
           {list.map((item, index) => (
             <div>
