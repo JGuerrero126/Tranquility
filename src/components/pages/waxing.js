@@ -6,16 +6,20 @@ function waxing() {
       <Pricing
         title="Waxing Pricing"
         list={[
-          "Manicure (with included 5 minute massage) - $20",
-          "Deluxe Manicure (with included 10 minute massage & scrub) - $30",
-          "Gel Manicure - $30",
-          "Dip Manicure - $30",
-          "Gel X - $55",
-          "Removal with service - $5-$10",
-          "Pedicure (with included 5 minute massage) - $25",
-          "Deluxe Pedicure (with included 10 minute massage & scrub) - $35",
-          "Gel Pedicure - $35",
-          "Dip Pedicure - $35",
+          "Eyebrow Shaping - $20",
+          "Eyebrow Clean-Up - $12",
+          "Upper Lip - $8",
+          "Chin - $12",
+          "Full Face - $40",
+          "Under Arms - $18",
+          "Half Arm - $25",
+          "Full Arm - $45",
+          "Half Leg - $30",
+          "Full Leg - Starting at $50",
+          "Bikini - $35",
+          "Forehead - $10",
+          "Sideburns - $15",
+          "Back - Starting at $50",
         ]}
       />
     </div>
