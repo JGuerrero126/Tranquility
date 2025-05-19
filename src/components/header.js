@@ -10,10 +10,11 @@ import {
 } from "@chakra-ui/react";
 
 function Header() {
+  const screenWidth = window.innerWidth;
   return (
     <Box
       w="100vw"
-      h={["10rem"]}
+      h="20vh"
       overflow="hidden"
       position="relative"
       textAlign="center"

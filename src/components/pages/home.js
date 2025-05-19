@@ -18,7 +18,7 @@ function Home() {
         bg="wheat"
         position="sticky"
         marginTop="-1rem"
-        minH="100%"
+        minH="75vh"
         paddingBottom="3rem"
         pt="1rem"
         minW="100vw"

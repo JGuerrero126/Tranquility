@@ -17,6 +17,7 @@ function extensions() {
         bg="snow"
         marginTop="1rem"
         borderRadius="0"
+        minH="75vh"
       >
         <CardBody>
           <Heading textColor="coral" textAlign="center">
