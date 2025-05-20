@@ -10,8 +10,15 @@ import {
 import ServiceCard from "../serviceCard";
 // import StaffCard from "../staffCard";
 import manicureImg from "../../images/manicureImg.jpg";
-
+import extensionImg from "../../images/extension.png";
+import oraLogo from "../../images/oraLogo.png";
+import hairLogo from "../../images/hairLogo.jpg";
 function Home() {
+  const screenWidth = window.innerWidth;
+  console.log(screenWidth);
+  var maniPediText;
+  var extensionsText;
+
   return (
     <div>
       <Container
@@ -21,41 +28,31 @@ function Home() {
         minH="75vh"
         paddingBottom="3rem"
         pt="1rem"
-        minW="100vw"
+        minW="100%"
       >
-        <Heading textAlign="center">Tranquil Services</Heading>
+        <Heading
+          textAlign="center"
+          fontFamily="Charm"
+          textColor="rgb(49, 49, 49)"
+        >
+          Available Services
+        </Heading>
         <ServiceCard
           link="/mani+pedi"
-          title="Manicure + Pedicure"
+          title="Mani + Pedi + Gel X"
           img={manicureImg}
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         />
         <ServiceCard
           link="extensions"
           title="Hair Extensions"
-          img="https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=400"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          img={extensionImg}
         />
-        <ServiceCard
-          link="waxing"
-          title="Waxing Services"
-          img="https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=400"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        />
+        <ServiceCard link="waxing" title="O•R•A" img={oraLogo} />
         <ServiceCard
           link="/hair+coloring"
           title="Hair + Color"
-          img="https://images.pexels.com/photos/3812743/pexels-photo-3812743.jpeg?auto=compress&cs=tinysrgb&w=400"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          img={hairLogo}
         />
-        {/* <Heading mt="1rem" textAlign="center">
-          Meet The Staff
-        </Heading>
-        <StaffCard
-          name="Rosanne"
-          portrait="https://images.pexels.com/photos/14057676/pexels-photo-14057676.jpeg?auto=compress&cs=tinysrgb&w=400"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-        /> */}
       </Container>
     </div>
   );

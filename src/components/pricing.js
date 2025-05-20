@@ -17,7 +17,7 @@ function Pricing({ title, img, description, list }) {
       direction={["column", "column", "row"]}
       boxShadow="0.5rem 0.5rem 0rem brown"
       bg="snow"
-      marginTop="1rem"
+      paddingTop="1rem"
       borderRadius="0"
       minH="75vh"
     >
@@ -28,9 +28,8 @@ function Pricing({ title, img, description, list }) {
         {description && <Text textAlign="center">{description}</Text>}
         <List align="center">
           {list.map((item, index) => (
-            <div>
+            <div key={index}>
               <ListItem key={index}>{item}</ListItem>
-              {/* <Separator /> */}
             </div>
           ))}
           ;

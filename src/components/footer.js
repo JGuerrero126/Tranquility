@@ -3,8 +3,8 @@ import { Box, Center, Container, Heading, Image, Text } from "@chakra-ui/react";
 function Footer() {
   return (
     <Box
-      bg="snow"
-      minW="100vw"
+      // bg="black"
+      minW="100%"
       bottom="0"
       pt="1rem"
       pb="1rem"

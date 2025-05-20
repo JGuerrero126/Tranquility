@@ -14,18 +14,22 @@ function ServiceCard({ title, img, text, link }) {
     <Link href={link}>
       <Card
         direction={["column", "column", "row"]}
-        boxShadow="0.5rem 0.5rem 0rem brown"
+        boxShadow="0.5rem 0.5rem 0rem #e8c888"
         bg="snow"
         marginTop="1rem"
         borderRadius="0"
       >
-        <Center mt={["1rem", "0rem"]}>
+        <Center mt="1rem">
           <Box w="15rem" h="15rem">
-            <Image border="0.5rem solid darkred" src={img} />
+            <Image
+              border="0.5rem solid wheat"
+              src={img}
+              bg="rgb(255, 255, 255)"
+            />
           </Box>
         </Center>
         <CardBody>
-          <Heading textColor="coral" textAlign="center">
+          <Heading textColor="#e8c888" textAlign="center">
             {title}
           </Heading>
           <Text mt="2rem" textAlign="center">
