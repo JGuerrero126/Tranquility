@@ -1,6 +1,21 @@
-import { Box, Center, Container, Heading, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Container,
+  Heading,
+  Image,
+  Link,
+  Text,
+} from "@chakra-ui/react";
 
 function Footer() {
+  const screenWidth = window.innerWidth;
+  var font;
+  if (screenWidth < 375) {
+    font = "1.25rem";
+  } else {
+    font = "1.5rem";
+  }
   return (
     <Box
       // bg="black"
@@ -14,14 +29,14 @@ function Footer() {
       <Heading textColor="coral" mb="2rem">
         Tranquility Spa & Salon
       </Heading>
-      <Text fontSize="1.5rem" textAlign="left" ml="1rem" mb="1rem">
-        Contact
-      </Text>
-      <Text fontSize="1.5rem" textAlign="left" ml="1rem" mb="1rem">
+      <Link href="/about-us" fontSize={font} textAlign="left" ml="1rem">
         About Us
+      </Link>
+      <Text fontSize={font} textAlign="left" ml="1rem" mt="1REM" mb="1rem">
+        Contact Us At (949) 775-2520
       </Text>
-      <Text fontSize="1.5rem" textAlign="left" ml="1rem">
-        Twitter
+      <Text fontSize={font} textAlign="left" ml="1rem" mb="1rem">
+        Find Us On Instagram @tranquilitysalonirvine
       </Text>
     </Box>
   );

@@ -11,7 +11,7 @@ import {
 
 function Header() {
   const screenWidth = window.innerWidth;
-  if (screenWidth < 359) {
+  if (screenWidth <= 360) {
     return (
       <Box
         w="100vw"

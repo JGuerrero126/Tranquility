@@ -13,7 +13,7 @@ function extensions() {
     <div>
       <Card
         direction={["column", "column", "row"]}
-        boxShadow="0.5rem 0.5rem 0rem brown"
+        boxShadow="0rem 0.5rem 0rem brown"
         bg="snow"
         paddingTop="1rem"
         borderRadius="0"

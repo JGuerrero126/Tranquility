@@ -1,4 +1,3 @@
-import Pricing from "../pricing";
 import {
   Card,
   CardBody,
@@ -6,18 +5,23 @@ import {
   Divider,
   Heading,
   Image,
-  List,
-  ListItem,
-  Text,
 } from "@chakra-ui/react";
 import bobImg from "../../images/bobImg.jpg";
+import rosanneImg from "../../images/rosanneImg.jpg";
 
-function waxing() {
+function ora() {
+  const screenWidth = window.innerWidth;
+  var width;
+  if (screenWidth < 1024) {
+    width = "80vw";
+  } else {
+    width = "50rem";
+  }
   return (
     <div>
       <Card
         direction={["column", "column", "row"]}
-        boxShadow="0.5rem 0.5rem 0rem brown"
+        boxShadow="0rem 0.5rem 0rem brown"
         bg="snow"
         paddingTop="1rem"
         borderRadius="0"
@@ -36,12 +40,15 @@ function waxing() {
             without any downtime.
           </Center>
           <Center marginTop="2rem">
-            <Image maxW="50vw" src={bobImg} />
+            <Image maxW={width} src={bobImg} />
           </Center>
+          {/* <Center marginTop="2rem">
+            <Image maxW={width} src={rosanneImg} />
+          </Center> */}
         </CardBody>
       </Card>
     </div>
   );
 }
 
-export default waxing;
+export default ora;

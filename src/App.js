@@ -4,7 +4,8 @@ import Home from "./components/pages/home";
 import manipedi from "./components/pages/manipedi";
 import extensions from "./components/pages/extensions";
 import hairColor from "./components/pages/hairColor";
-import waxing from "./components/pages/waxing";
+import ora from "./components/pages/ora";
+import aboutUs from "./components/pages/aboutUs";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path="/mani+pedi" Component={manipedi} />
           <Route path="/hair+coloring" Component={hairColor} />
           <Route path="/extensions" Component={extensions} />
-          <Route path="/waxing" Component={waxing} />
+          <Route path="/ora" Component={ora} />
+          <Route path="/about-us" Component={aboutUs} />
         </Routes>
         <Footer />
       </BrowserRouter>
