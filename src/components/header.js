@@ -17,11 +17,17 @@ function Header() {
   var height;
   var marginTop;
   if (screenWidth < 375) {
-  } else if (screenWidth < 425) {
-  } else if (screenWidth < 768) {
-    width = "95vw";
-    height = "35vw";
+    width = "100%";
+    height = "25vh";
     marginTop = "-3rem";
+  } else if (screenWidth < 425) {
+    width = "100%";
+    height = "25vh";
+    marginTop = "-3rem";
+  } else if (screenWidth < 768) {
+    width = "100vw";
+    height = "60vw";
+    marginTop = "-4rem";
   } else if (screenWidth < 1024) {
     width = "80vw";
     height = "40vh";
@@ -37,7 +43,7 @@ function Header() {
   } else {
     width = "40vw";
     height = "40vh";
-    marginTop = "-11rem";
+    marginTop = "-12rem";
   }
   return (
     <Box w="100%" h="20vh" overflow="hidden" position="relative" align="center">
