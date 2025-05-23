@@ -21,7 +21,7 @@ function manipedi() {
           "Dip Manicure - $30",
           "Gel X - $55",
           "Removal with service - $5-$10",
-          "XXXXXXXXXXXXXXXXXXXXXXXX",
+          "Press-On Nails - $45 (Junior Stylist)",
           "Pedicure (with included 5 minute massage) - $25",
           "Deluxe Pedicure (with included 10 minute massage & scrub) - $35",
           "Gel Pedicure - $35",
