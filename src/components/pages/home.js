@@ -12,7 +12,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import ServiceCard from "../serviceCard";
-// import StaffCard from "../staffCard";
 import manicureImg from "../../images/manicureImg.jpg";
 import extensionImg from "../../images/extension.png";
 import oraLogo from "../../images/oraLogo.png";
@@ -50,15 +49,12 @@ function Home() {
             title="Mani + Pedi + Gel X"
             img={manicureImg}
           />
-          {/* <Spacer /> */}
           <ServiceCard
             link="extensions"
             title="Hair Extensions"
             img={extensionImg}
           />
-          {/* <Spacer /> */}
           <ServiceCard link="ora" title="O•R•A" img={oraLogo} />
-          {/* <Spacer /> */}
           <ServiceCard
             link="/hair+coloring"
             title="Hair + Color"
