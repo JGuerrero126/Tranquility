@@ -28,6 +28,7 @@ function extensions() {
             Tape-in Extensions
           </Heading>
           <Text textAlign="center">All Prices Included Installation</Text>
+          <Text textAlign="center">Contact Us For Your Consultation</Text>
           <Text textAlign="center">
             (Average Full Head Needs 30 to 50 Pieces)
           </Text>
