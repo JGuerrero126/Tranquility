@@ -41,7 +41,7 @@ function extensions() {
           </Heading>
           <Text textAlign="center">All Prices Included Installation</Text>
           <Text textAlign="center">
-            (Average Full Head Needs 125 to 175 Pieces)
+            (Average Full Head Needs 125 to 150 Pieces)
           </Text>
           <List align="center">
             <ListItem>18" - 25 Pieces - $120</ListItem>
@@ -52,7 +52,7 @@ function extensions() {
           </Heading>
           <Text textAlign="center">All Prices Included Installation</Text>
           <Text textAlign="center">
-            (Average Full Head Needs 125 to 175 Pieces)
+            (Average Full Head Needs 125 to 150 Pieces)
           </Text>
           <List align="center">
             <ListItem>20" - 25 Pieces - $120</ListItem>

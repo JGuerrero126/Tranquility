@@ -36,8 +36,7 @@ function ora() {
             O•R•A is a revolutionary technique using LED technology along with
             high quality hair extensions. O•R•A can be used in areas such as the
             hairline and crown, natural looking with no visible seam. Safe for
-            thinning or fine hair. O•R•A can give you new hair without surgery,
-            without any downtime.
+            thinning or fine hair.
           </Center>
           <Center marginTop="2rem">
             <Image maxW={width} src={bobImg} />
