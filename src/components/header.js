@@ -6,6 +6,8 @@ import {
   Heading,
   Image,
   Link,
+  LinkBox,
+  LinkOverlay,
   Text,
 } from "@chakra-ui/react";
 import tranquilityLogo from "../images/tranquilityLogo.png";
@@ -46,15 +48,23 @@ function Header() {
     marginTop = "-12rem";
   }
   return (
-    <Box w="100%" h="20vh" overflow="hidden" position="relative" align="center">
-      <Image
-        zIndex="0"
-        width={width}
-        height={height}
-        marginTop={marginTop}
-        src={tranquilityLogoBG}
-      />
-    </Box>
+    <LinkBox
+      w="100%"
+      h="20vh"
+      overflow="hidden"
+      position="relative"
+      align="center"
+    >
+      <LinkOverlay href="/">
+        <Image
+          zIndex="0"
+          width={width}
+          height={height}
+          marginTop={marginTop}
+          src={tranquilityLogoBG}
+        />
+      </LinkOverlay>
+    </LinkBox>
   );
 }
 

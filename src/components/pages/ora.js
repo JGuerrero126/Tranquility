@@ -1,10 +1,13 @@
 import {
+  AspectRatio,
   Card,
   CardBody,
   Center,
   Divider,
   Heading,
   Image,
+  VStack,
+  Stack,
 } from "@chakra-ui/react";
 import bobImg from "../../images/bobImg.jpg";
 import rosanneImg from "../../images/rosanneImg.jpg";
@@ -39,11 +42,20 @@ function ora() {
             thinning or fine hair.
           </Center>
           <Center marginTop="2rem">
-            <Image maxW={width} src={bobImg} />
+            <Stack>
+              <Image maxW={width} src={bobImg} />{" "}
+              <AspectRatio maxWidth={width}>
+                <iframe
+                  src="https://player.vimeo.com/video/1103322475?h=2d4bacd7e9&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1"
+                  // frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  // referrerpolicy="strict-origin-when-cross-origin"
+                  // style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                  title="3rd thursday.mp4"
+                ></iframe>
+              </AspectRatio>
+            </Stack>
           </Center>
-          {/* <Center marginTop="2rem">
-            <Image maxW={width} src={rosanneImg} />
-          </Center> */}
         </CardBody>
       </Card>
     </div>
